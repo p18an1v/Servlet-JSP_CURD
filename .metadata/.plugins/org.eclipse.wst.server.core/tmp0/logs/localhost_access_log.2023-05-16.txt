@@ -1,0 +1,14 @@
+127.0.0.1 - - [16/May/2023:14:31:15 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/May/2023:14:31:19 +0530] "GET /RechargeApplication/Login.jsp HTTP/1.1" 200 2476
+0:0:0:0:0:0:0:1 - - [16/May/2023:14:31:19 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [16/May/2023:14:33:08 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/May/2023:14:33:11 +0530] "GET /RechargeApplication/Login.jsp HTTP/1.1" 200 2476
+0:0:0:0:0:0:0:1 - - [16/May/2023:14:33:12 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [16/May/2023:18:24:00 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:24:02 +0530] "GET /RechargeApplication/Home.jsp HTTP/1.1" 500 2749
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:24:02 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:25:32 +0530] "GET /RechargeApplication/Login.jsp HTTP/1.1" 200 2476
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:25:32 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:25:50 +0530] "POST /RechargeApplication/LoginController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:25:50 +0530] "GET /RechargeApplication/Login.jsp HTTP/1.1" 200 2476
+0:0:0:0:0:0:0:1 - - [16/May/2023:18:28:40 +0530] "GET /RechargeApplication/Home.jsp HTTP/1.1" 500 2749

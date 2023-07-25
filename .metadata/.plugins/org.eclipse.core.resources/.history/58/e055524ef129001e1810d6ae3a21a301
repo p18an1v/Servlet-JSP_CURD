@@ -1,0 +1,85 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+public class dbUpdateOp {
+	
+
+	public int update(user_account acc) {
+	    int flag = 0;
+	    Connection con = dbconnection.getconnection();
+	    
+	    try {
+	        if (updateAccId(acc.getAccId(), acc.getAccId(), con) &&
+	            updateUserName(acc.getAccId(), acc.getUserName(), con) &&
+	            updatePhoneNo(acc.getAccId(), acc.getPhoneNo(), con) &&
+	            updateAccountBalance(acc.getAccId(), acc.getAccBal(), con) &&
+	            updatePassword(acc.getAccId(), acc.getPassword(), con)) {
+	            System.out.println("Your data is updated");
+	            flag = 1;
+	        }
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (con != null) {
+	                con.close();
+	            }
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    return flag;
+	}
+
+	private boolean updateAccId(int accId, int newAccId, Connection con) throws SQLException {
+	    String query = "UPDATE user_account SET accId=? WHERE accId=?";
+	    try (PreparedStatement ps = con.prepareStatement(query)) {
+	        ps.setInt(1, newAccId);
+	        ps.setInt(2, accId);
+	        int rowsAffected = ps.executeUpdate();
+	        return rowsAffected > 0;
+	    }
+	}
+
+	private boolean updateUserName(int accId, String newUserName, Connection con) throws SQLException {
+	    String query = "UPDATE user_account SET userName=? WHERE accId=?";
+	    try (PreparedStatement ps = con.prepareStatement(query)) {
+	        ps.setString(1, newUserName);
+	        ps.setInt(2, accId);
+	        int rowsAffected = ps.executeUpdate();
+	        return rowsAffected > 0;
+	    }
+	}
+
+	private boolean updatePhoneNo(int accId, String newPhoneNo, Connection con) throws SQLException {
+	    String query = "UPDATE user_account SET phoneNo=? WHERE accId=?";
+	    try (PreparedStatement ps = con.prepareStatement(query)) {
+	        ps.setString(1, newPhoneNo);
+	        ps.setInt(2, accId);
+	        int rowsAffected = ps.executeUpdate();
+	        return rowsAffected > 0;
+	    }
+	}
+
+	private boolean updateAccountBalance(int accId, int newAccBal, Connection con) throws SQLException {
+	    String query = "UPDATE user_account SET accBal=? WHERE acc_no=?";
+	    try (PreparedStatement ps = con.prepareStatement(query)) {
+	        ps.setInt(1, newAccBal);
+	        ps.setInt(2, accId);
+	        int rowsAffected = ps.executeUpdate();
+	        return rowsAffected > 0;
+	    }
+	}
+
+	private boolean updatePassword(int accId, int newPassword, Connection con) throws SQLException {
+	    String query = "UPDATE user_account SET password=? WHERE accId=?";
+	    try (PreparedStatement ps = con.prepareStatement(query)) {
+	        ps.setInt(1, newPassword);
+	        ps.setInt(2, accId);
+	        int rowsAffected = ps.executeUpdate();
+	        return rowsAffected > 0;
+	    }
+	}
+
+}

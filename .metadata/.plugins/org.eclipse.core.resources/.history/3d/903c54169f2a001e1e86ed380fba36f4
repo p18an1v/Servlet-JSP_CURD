@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Failure</title>
+</head>
+<body>
+    <h1>Update Failure</h1>
+    <p>Sorry, an error occurred while updating the data.</p>
+    <a href="update_user.jsp">Go back and try again</a>
+</body>
+</html>

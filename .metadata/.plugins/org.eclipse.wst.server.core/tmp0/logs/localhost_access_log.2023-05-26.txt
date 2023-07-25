@@ -1,0 +1,12 @@
+127.0.0.1 - - [26/May/2023:20:03:10 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:03:12 +0530] "GET /TutionProject/index.jsp HTTP/1.1" 200 954
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:03:12 +0530] "GET /TutionProject/css/style.css HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:03:12 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:08 +0530] "GET /CollegeMiniProject/Login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:08 +0530] "GET /CollegeMiniProject/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:08 +0530] "GET /CollegeMiniProject/img/lib.jpg HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:08 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:15 +0530] "POST /CollegeMiniProject/Login.java HTTP/1.1" 404 784
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:36 +0530] "GET /CollegeMiniProject/BookOrder.jsp HTTP/1.1" 500 2603
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:38 +0530] "GET /CollegeMiniProject/BookOrder.jsp HTTP/1.1" 500 2497
+0:0:0:0:0:0:0:1 - - [26/May/2023:20:04:42 +0530] "GET /CollegeMiniProject/contact.html HTTP/1.1" 200 2025

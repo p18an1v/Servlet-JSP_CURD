@@ -1,0 +1,7 @@
+127.0.0.1 - - [11/Jul/2023:10:57:40 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [11/Jul/2023:10:57:41 +0530] "GET /crud2/login.html HTTP/1.1" 200 486
+127.0.0.1 - - [11/Jul/2023:10:57:42 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [11/Jul/2023:10:57:45 +0530] "GET /crud2/register.html HTTP/1.1" 200 446
+127.0.0.1 - - [11/Jul/2023:10:58:03 +0530] "GET /crud2/RegisterController?sid=1&name=pranav&uname=pro&pass=pass HTTP/1.1" 200 -
+127.0.0.1 - - [11/Jul/2023:11:27:34 +0530] "GET /crud2/RegisterController?sid=1&name=pranav&uname=pro&pass=pass HTTP/1.1" 200 -
+127.0.0.1 - - [11/Jul/2023:11:27:35 +0530] "GET /crud2/RegisterController?sid=1&name=pranav&uname=pro&pass=pass HTTP/1.1" 200 -

@@ -1,0 +1,49 @@
+package com.entity;
+
+public class user_account {
+	private int accId;
+	private String userName;
+	private int accBal;
+	private String accType;
+	private int password;
+	public user_account(int accId, String userName, int accBal, String accType, int password) {
+		super();
+		this.accId = accId;
+		this.userName = userName;
+		this.accBal = accBal;
+		this.accType = accType;
+		this.password = password;
+	}
+	public int getAccId() {
+		return accId;
+	}
+	public void setAccId(int accId) {
+		this.accId = accId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public int getAccBal() {
+		return accBal;
+	}
+	public void setAccBal(int accBal) {
+		this.accBal = accBal;
+	}
+	public String getAccType() {
+		return accType;
+	}
+	public void setAccType(String accType) {
+		this.accType = accType;
+	}
+	public int getPassword() {
+		return password;
+	}
+	public void setPassword(int password) {
+		this.password = password;
+	}
+	
+	
+}

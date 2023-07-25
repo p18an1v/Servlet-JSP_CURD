@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;account.java&apos; to &apos;entity&apos;&#x0D;&#x0A;- Original project: &apos;Bank2&apos;&#x0D;&#x0A;- Destination element: &apos;entity&apos;&#x0D;&#x0A;- Original element: &apos;account.java&apos;" description="Copy file" element1="src/main/java/entity/account.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1684525423372" target="/CollegeMiniProject/src/main/java/entity" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,65 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class updateController
+ */
+@WebServlet("/updateController")
+public class updateController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public updateController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	    int accId = Integer.parseInt(request.getParameter("accId"));
+	    String userName = request.getParameter("userName");
+	    String phoneNo = request.getParameter("phoneNo");
+	    int accBal = Integer.parseInt(request.getParameter("accId"));
+	    int password=Integer.parseInt(request.getParameter("accId"));
+	    user_account acc = null;
+	    acc=new user_account(accId, userName, phoneNo, accBal, password);
+	    dbOp db = new dbOp();
+	    int flag = db.update(acc);
+	    PrintWriter out = response.getWriter();
+	    if(flag>0)
+		{
+			//System.out.println("text");
+			response.setContentType("text/html");  
+			out.println("<html><body>");
+	        out.println("<h1>Your data is updated to the database</h1>");
+	        out.println("</body></html>");
+			// response.sendRedirect("Login.html");
+		}else {
+			System.out.println("updation unsuccesfull");
+		}
+	    
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,7 @@
+127.0.0.1 - - [18/Jul/2023:11:08:41 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:08:42 +0530] "GET /Recharge03/MobileRecaharge.jsp HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:08:43 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:10:19 +0530] "GET /Recharge03/MobileRecaharge.jsp HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:10:19 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:10:25 +0530] "GET /Recharge03/MobileRecaharge.jsp HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:11:10:26 +0530] "GET /Recharge03/MobileRecaharge.jsp HTTP/1.1" 200 202

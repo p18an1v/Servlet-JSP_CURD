@@ -1,0 +1,11 @@
+package com.entity;
+
+public class user_account {
+
+	private int accId;
+	private String userName;
+	private double phoneNo;
+	private int accBal;
+	private int password;
+	
+}

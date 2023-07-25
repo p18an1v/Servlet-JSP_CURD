@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert Dashboard</title>
+</head>
+<body>
+<h1>Welcome to your Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>Account ID</th>
+            <th>Username</th>
+            <th>Phone Number</th>
+            <th>Account Balance</th>
+            <th>Account password</th>
+            <!-- Add more columns if needed -->
+        </tr>
+        <tr>
+            <td>${user_account_sdata.accId}</td>
+            <td>${user_account_sdata.userName}</td>
+            <td>${user_account_sdata.phoneNo}</td>
+            <td>${user_account_sdata.accBal}</td>
+            <td>${user_account_sdata.password }</td>
+            <!-- Retrieve and display other account details as needed -->
+        </tr>
+    </table>
+
+</body>
+</html>

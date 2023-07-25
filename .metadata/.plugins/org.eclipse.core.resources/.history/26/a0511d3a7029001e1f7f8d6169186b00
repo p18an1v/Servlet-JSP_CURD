@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "register">
+     Enter your Name <br>
+     <input type="text"  name="userName" ><br>
+     <!--   Phone No <br>
+     <input type="text"  name="phoneNo"><br>-->
+     Enter your AccNo<br>
+     <input type="text"  name="accNo"><br>
+     Account Balance<br>
+     <input type="text"  name="accBal"><br>
+     Account Type<br>
+     <input type="text"  name="accTyp"><br>
+     Password <br>
+     <input type="text"  name="password"><br>
+     <input type="submit" value = "Save Data"> 
+</form>
+</body>
+</html>

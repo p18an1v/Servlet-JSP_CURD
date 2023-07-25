@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;DbConnection.java&apos; to &apos;java&apos;" description="Move &apos;DbConnection.java&apos; to &apos;java&apos;" destination="src/main/java" element1="DbConnection.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1688815681720" updateReferences="true"/>
+</session>

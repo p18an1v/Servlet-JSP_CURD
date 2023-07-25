@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\userManagementApplication-master"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\UserManagement"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\crud2"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\registrationproject"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\OnlineBookShopee-main"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\Bank2"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\Rechargeapp01-main"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\College-Management-System-In-Java-master"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\OnlineRechargePortal-master"/>
+			<item value="C:\Users\vishw\OneDrive\Documents\Desktop\ServeletJsp\Linkcode-Recharge-Applictaion-master"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="611"/>
+		<item key="DIALOG_Y_ORIGIN" value="269"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

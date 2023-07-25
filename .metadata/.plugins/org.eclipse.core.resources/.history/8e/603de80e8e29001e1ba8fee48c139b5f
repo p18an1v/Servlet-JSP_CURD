@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Dashboard</title>
+</head>
+<body>
+<h1>Welcome to your Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>Account ID</th>
+            <th>Username</th>
+            <th>Phone Number</th>
+            <th>Account Balance</th>
+            <th>Account password</th>
+        </tr>
+        <tr>
+            <td>${Login_data.accId}</td>
+            <td>${Login_data.userName}</td>
+            <td>${Login_data.phoneNo}</td>
+            <td>${Login_data.accBal}</td>
+            <td>${Login_data.password }</td>
+            </tr>
+    </table>
+
+</body>
+</html>

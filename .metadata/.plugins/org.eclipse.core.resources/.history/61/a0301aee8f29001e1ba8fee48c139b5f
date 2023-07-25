@@ -1,0 +1,90 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class dbOp {
+	public int create_Acc(user_account acc) {
+		int flag=0;
+	    String insert_Query="insert into user_account values(?,?,?,?,?)";
+		Connection con = dbconnection.getconnection();
+		try {
+			PreparedStatement ps =con.prepareStatement(insert_Query);
+			
+			ps.setInt(1, acc.getAccId());
+			ps.setString(2, acc.getUserName());
+			ps.setString(3, acc.getPhoneNo());
+			ps.setInt(4, acc.getAccBal());
+			ps.setInt(5, acc.getPassword());
+			int i=ps.executeUpdate();
+			if(i>0)
+			{
+				System.out.println("record inserting...");
+				flag=1;
+			}	
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return flag;
+	}
+	
+	public int search_Acc(Login l) {
+		int flag=0;
+		user_account acc;
+		Connection con = dbconnection.getconnection();
+		String search_Query = "select * from user_account where accId =? and password=?";
+		try {
+			PreparedStatement ps =con.prepareStatement(search_Query);
+			ps.setInt(1,l.getAccId());
+			ps.setInt(2, l.getPassword());
+			
+			ResultSet rs=ps.executeQuery();
+			if(rs.next()) {
+				acc=new user_account(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4),rs.getInt(5));
+				flag=1;
+			}	
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return flag;
+		
+	}
+	
+	public user_account display(int accId) {
+		int i=0;
+		user_account acc = null;
+		Connection con = dbconnection.getconnection();
+		String Third_Query = "select * from user_account where accId =?";
+		
+		PreparedStatement ps;
+		try {
+			ps = con.prepareStatement(Third_Query);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()) {
+	            int accountId = rs.getInt("accId");
+	            String userName = rs.getString("userName");
+	            String phoneNo = rs.getString("phoneNo");
+	            int accBal = rs.getInt("accBal");
+	            int password=rs.getInt("password");
+	            
+	         // Create the user_account object with the retrieved data
+	             acc = new user_account(accountId, userName, phoneNo, accBal, password);
+	                         } 
+		    } catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		                             }
+		
+            return acc;
+                                         }
+          }
+	

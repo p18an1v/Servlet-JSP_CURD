@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="LoginController">
+     AccId<br>
+     <input type="text" name="accId"><br>
+     Password<br>
+     <input type="text" name="password"><br>
+     <input type="submit" value="Login"><br>
+    <br>
+      <p>New Registration</p><br>
+    <a href="registr.html" class="btn-submit">Register</a>
+    
+</form>
+</body>
+</html>

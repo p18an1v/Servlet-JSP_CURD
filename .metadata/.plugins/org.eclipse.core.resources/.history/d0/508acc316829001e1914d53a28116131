@@ -1,0 +1,34 @@
+package com.connect;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.entity.*;
+public class dbOprations {
+
+	public int create_Acc(user_account acc) {
+		int flag=0;
+	    String insert_Query="insert into user_account values(?,?,?,?,?)";
+		Connection con = dbConnection.getconnection();
+		try {
+			PreparedStatement ps =con.prepareStatement(insert_Query);
+			
+			ps.setInt(1, acc.getAccId());
+			ps.setString(2, acc.getUserName());
+			ps.setString(3, acc.getPhoneNo());
+			ps.setInt(4, acc.getAccBal());
+			ps.setInt(5, acc.getPassword());
+			int i=ps.executeUpdate();
+			if(i>0)
+			{
+				System.out.println("record inserting...");
+				flag=1;
+			}	
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("record saved");
+		return flag;
+	}
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Update one at a time</h1><br>
+<h2>What do U want to update </h2><br>
+             <href a="Account ID"><br>
+             <href a="User Name"><br>
+             <href a= "Phone Number"><br>
+             <href a= "Account Balance"><br>
+             <href a="Account password"><br>
+</body>
+</html>

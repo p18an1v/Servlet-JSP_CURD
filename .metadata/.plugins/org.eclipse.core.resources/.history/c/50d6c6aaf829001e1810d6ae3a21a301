@@ -1,0 +1,84 @@
+
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class updateController
+ */
+@WebServlet("/updateController")
+public class updateController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public updateController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		int accId = Integer.parseInt(request.getParameter("accId"));
+        String updateOption = request.getParameter("updateOption");
+        String newValue = request.getParameter("newValue");
+		
+        //user_account acc = null;
+        updateAccount acc=new updateAccount(accId,userName,phoneNo,accBal,password);
+        acc.setAccId(accId);
+        
+        dbUpdateOp updateOp = new dbUpdateOp();
+        int flag=0;
+        try {
+        switch (updateOption) {
+            case "accId":
+				flag =updateOp.update(acc);
+                break;
+            case "userName":
+                flag = updateOp.update(acc);
+            	break;
+            case "phoneNo":
+            	 flag = updateOp.update(acc);
+                break;
+            case "accBal":
+            	 flag = updateOp.update(acc);
+            	break;
+            case "password":
+            	 flag = updateOp.update(acc);
+              	break;
+             }
+        } catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        if (flag>0) {
+            request.setAttribute("message", "Data updated successfully.");
+        } else {
+            request.setAttribute("message", "Error updating data.");
+        }
+        
+
+        // Display the JSP page with the result message
+        request.getRequestDispatcher("update_data.jsp").forward(request, response);
+    }
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Dashboard</title>
+</head>
+<body>
+<h1>Welcome to your Dashboard</h1>
+    <table border="3">
+        <tr>
+            <th>Account ID</th>
+            <th>Username</th>
+            <th>Phone Number</th>
+            <th>Account Balance</th>
+            <th>Account password</th>
+        </tr>
+        <tr>
+            <td>${stored_data.accId}</td>
+            <td>${stored_data.userName}</td>
+            <td>${stored_data.phoneNo}</td>
+            <td>${stored_data.accBal}</td>
+            <td>${stored_data.password }</td>
+            </tr>
+    </table>
+     <!-- Add buttons for update, delete, and recharge options -->
+    <form action="UpdateController" method="post">
+        <input type="hidden" name="accId" value="${stored_data.accId}" />
+        <input type="submit" value="Update" />
+    </form>
+
+    <form action="DeleteController" method="post">
+        <input type="hidden" name="accId" value="${stored_data.accId}" />
+        <input type="submit" value="Delete" />
+    </form>
+
+    <form action="RechargeController" method="post">
+        <input type="hidden" name="accId" value="${stored_data.accId}" />
+        <input type="text" name="amount" />
+        <input type="submit" value="Recharge" />
+
+</body>
+</html>

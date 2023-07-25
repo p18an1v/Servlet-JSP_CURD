@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<style>
+.contact-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300vh;
+  background-color: rgb(68, 75, 81);
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+
+form {
+  width: 50%;
+  color: aliceblue;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+button[type="submit"] {
+  background-color: #ff7200;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+  color: aliceblue;
+}
+
+.contact-details {
+  width: 45%;
+  padding: 20px;
+  background-color: #ff7200;
+  color:white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.contact-details p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+i {
+  margin-right: 10px;
+  /* color: #007bff; */
+  color: aliceblue;
+}
+
+</style>
+</head>
+<body>
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+  <div class="contact-details">
+      <h3>Contact Details</h3>
+      <h4><i class="fas fa-map-marker-alt"></i> Barve memorial Complex, JM road , Revenew colony, ShivajiNagar, Pune, Maharashtra </h4>
+      <h4><i class="fas fa-phone"></i> +1 123-456-7890</h4>
+      <h4><i class="fas fa-envelope"></i> info@rechargeStation.com</h4>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    
+  
+</section>
+
+</body>
+</html>

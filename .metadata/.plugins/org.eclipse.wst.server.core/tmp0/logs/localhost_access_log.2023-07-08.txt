@@ -1,0 +1,10 @@
+127.0.0.1 - - [08/Jul/2023:08:38:03 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:08:38:04 +0530] "GET /Test01/Register.html HTTP/1.1" 200 474
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:08:38:22 +0530] "GET /Test01/RegisterController?sid=1&sname=Pranav&mob=23456&pass=pass HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:08:38:43 +0530] "GET /Test01/display.html HTTP/1.1" 404 774
+127.0.0.1 - - [08/Jul/2023:16:40:20 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:16:40:21 +0530] "GET /Test02/register.html HTTP/1.1" 200 328
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:16:41:15 +0530] "GET /Test02/register.html HTTP/1.1" 200 345
+127.0.0.1 - - [08/Jul/2023:17:32:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:17:32:46 +0530] "GET /Test02/register.html HTTP/1.1" 200 386
+0:0:0:0:0:0:0:1 - - [08/Jul/2023:17:32:59 +0530] "GET /Test02/registerController?ename=pranav&eno=1&esal=100 HTTP/1.1" 500 18
