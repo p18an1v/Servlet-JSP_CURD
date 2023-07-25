@@ -1,9 +1,0 @@
-##############################
-#   Online Recharge Portal   #
-##############################
-.settings
-.classpath
-.project
-.tern-project
-/build
-/WebContent/WEB-INF/lib
